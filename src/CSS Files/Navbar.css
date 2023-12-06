@@ -83,6 +83,7 @@ ul li {
 }
 ul li:hover {
   cursor: pointer;
+  color: var(--nav-color);
 }
 
 ul a {
@@ -136,10 +137,10 @@ ul a:hover:after {
 
 .Name {
   writing-mode: horizontal-tb !important;
-  padding: 17 px;
+  padding: 10 px;
   font-weight: bold;
   display: flex;
-  justify-content: center;
+  justify-content:left;
 }
 
 .period {
@@ -151,8 +152,11 @@ ul a:hover:after {
   padding: 0;
   margin: 10px;
   border-radius: 10px;
+  transition:background-color 0.3s;
 }
-
+.name-box:hover {
+  background-color: var(--nice-color);
+}
 .Introduction {
   display: flex;
   flex-direction: column;

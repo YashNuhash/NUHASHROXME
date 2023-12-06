@@ -1,21 +1,25 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useEffect, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// eslint-disable-next-line no-unused-vars
+import { faUserTie } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-scroll";
 import "./CSS Files/Navbar.css";
 import Typewriter from "typewriter-effect/dist/core";
+// eslint-disable-next-line no-unused-vars
 import { animateScroll as scroll } from "react-scroll";
-import Pdf from "./Images/AkshayVakilResume.pdf";
 
 function Navbar() {
+  const githubProfileUrl = "https://github.com/YashNuhash/";
   const typewriterRef = useRef(null);
 
   useEffect(() => {
     const typewriter = new Typewriter(typewriterRef.current, {
       strings: [
-        "I am a Computer Science Student",
-        "I like coding",
-        "I enjoy watching shows",
+        "I am a Computer Science Student @RMSTU",
+        "I Love Competitive Programming",
+        "I enjoy Contributing to OpenSource Projects",
         "Keep scrolling!",
       ],
       autoStart: true,
@@ -32,56 +36,41 @@ function Navbar() {
     };
   }, []);
 
- 
-
-  const onResumeClick = () => {
-    window.open(Pdf);
-  };
-
   return (
     <nav id="navbar">
-      <div className="container">
-        <a  className = "Resume" onClick={onResumeClick}>
-          My Resume
-        </a>
-      </div>
-
-      <a href="https://www.linkedin.com/in/akshay-vakil/" target="_blank" className="icons">
+      <a href="https://www.linkedin.com/in/ashraful-nuhash-2192871b2/" target="_blank" className="icons" rel="noreferrer">
         <FontAwesomeIcon icon={faLinkedin} size="2x" />
       </a>
-      <a href="https://github.com/Octrainn" target="_blank" className="icons">
+      <a href="https://github.com/YashNuhash/" target="_blank" className="icons" rel="noreferrer">
         <FontAwesomeIcon icon={faGithub} size="2x" />
       </a>
 
       <ul className="nav-links">
         <div className="name-box">
-         
           <li className="Name">
-            A <span className="period">.</span>
+            <a href={githubProfileUrl} target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faGithub} />
+            </a>
           </li>
-                
         </div>
         <Link to="About" smooth={true} duration={500}>
-          <li>About</li>
-        </Link>
-        <Link to="Projects" smooth={true} duration={500}>
-          <li>Projects</li>
+          <li>About & Skills.</li>
         </Link>
         <Link to="Contact" smooth={true} duration={500}>
-          <li>Contact</li>
+          <li>Contact.</li>
         </Link>
       </ul>
       <div className="Introduction">
-        <h1>Hey, I'm Akshay</h1>
+        <h1>Hey, I'm Ashraful Nuhash</h1>
         <h2>
           <span ref={typewriterRef}></span>
         </h2>
         <p>
-          I'm currently a Full Stack Developer seeking many ways to improve my
+          I'm currently Learning Full Stack Development seeking many ways to improve my
           skills through problem-solving and creating various projects! Scroll
           down to learn more about me.
         </p>
-        <Link to="Contact"  smooth={true} duration={900}>
+        <Link to="Contact" smooth={true} duration={900}>
           <button>Contact Me</button>
         </Link>
       </div>
