@@ -61,12 +61,12 @@ function Navbar() {
         </Link>
       </ul>
       <div className="Introduction">
-        <h1>Hey, I'm Ashraful Nuhash</h1>
+        <h1>Hey, I am Ashraful Nuhash</h1>
         <h2>
           <span ref={typewriterRef}></span>
         </h2>
         <p>
-          I'm currently Learning Full Stack Development seeking many ways to improve my
+          I am currently Learning Full Stack Development seeking many ways to improve my
           skills through problem-solving and creating various projects! Scroll
           down to learn more about me.
         </p>
