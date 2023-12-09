@@ -1,4 +1,3 @@
-import React from 'react';
 import Navbar from './Navbar';
 import './CSS Files/App.css';
 import About from './About';
