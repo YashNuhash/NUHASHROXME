@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
-import './CSS Files/Contact.css';
+import './css/Contact.css';
 
 function Contact() {
   return (

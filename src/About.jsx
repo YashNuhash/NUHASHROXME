@@ -2,7 +2,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFaceSmileWink, faFaceSmileBeam } from '@fortawesome/free-regular-svg-icons';
-import './CSS Files/about.css';
+import './css/about.css';
 
 function About() {
   const languages = [
@@ -36,7 +36,7 @@ function About() {
       <div className='content-wrapper'>
         <div className='about-text'>
           <p>
-            Hey there! I'm a passionate to become a full stack web developer with a versatile skill set.I am learing to possess a deep understanding of both front-end and back-end development and constantly refining my abilities while seeking opportunities for growth in both domains.
+            Hey there! I am a passionate to become a full stack web developer with a versatile skill set.I am learing to possess a deep understanding of both front-end and back-end development and constantly refining my abilities while seeking opportunities for growth in both domains.
           </p>
           <br />
         </div>

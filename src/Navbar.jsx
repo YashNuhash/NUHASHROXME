@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserTie } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-scroll";
-import "./CSS Files/Navbar.css";
+import "./css/Navbar.css";
 import Typewriter from "typewriter-effect/dist/core";
 // eslint-disable-next-line no-unused-vars
 import { animateScroll as scroll } from "react-scroll";
